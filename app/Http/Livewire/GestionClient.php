@@ -25,7 +25,7 @@ class GestionClient extends Component
         $client = Client::find($client_id);
         $this->imgUrl = $client->storage_path;
     }
-    public function close_img()
+    public function close_img() 
     {
         $this->imgUrl = "";
     }

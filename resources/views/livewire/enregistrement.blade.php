@@ -58,6 +58,10 @@
                     </div>
                 </div>
 
+                <div class="my-3">
+                    <p>{{ $responseMessage }}</p>
+                </div>
+
             </div>
 
 
@@ -178,10 +182,11 @@
 
     </form>
 
+    {{--
     @if ($code_secret)
         {{ $code_secret }}
     @endif
-    {{--
+    
     @if ($code_secret_confirmation)
         {{ $code_secret_confirmation }}
     @endif
