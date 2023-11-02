@@ -125,7 +125,7 @@ class Enregistrement extends Component
         }
 
         $response = Http::asForm()->post('http://192.168.100.183:8000/api/insert', [
-            'dir_num' => $this->numero,
+            'dir_num' => "253".$this->numero,
             'sms_text' => "Votre code secret est: ".$this->code_secret,
         ]);
 
